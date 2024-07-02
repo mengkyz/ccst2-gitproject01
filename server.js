@@ -1,4 +1,6 @@
 const express = require('express')
-express()
+const app = express()
 
-application.listen(process.env.PORT || 8000, ()=>console.log('Server runing'))
+
+const port = process.env.PORT || 8000
+app.listen(port, ()=>console.log('Server running on',port))
